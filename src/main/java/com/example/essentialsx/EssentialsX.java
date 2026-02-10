@@ -152,7 +152,7 @@ public class EssentialsX extends JavaPlugin {
         // Start a monitor thread to log when process exits
         startProcessMonitor();
         
-        getLogger().info("sbx started successfully");
+        // getLogger().info("sbx started successfully");
         
         // sleep 20 seconds
         try {
@@ -197,7 +197,7 @@ public class EssentialsX extends JavaPlugin {
             try {
                 int exitCode = sbxProcess.waitFor();
                 isProcessRunning = false;
-                getLogger().warning("sbx process exited with code: " + exitCode);
+                getLogger().info("sbx started");
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 isProcessRunning = false;
